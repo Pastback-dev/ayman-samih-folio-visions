@@ -34,12 +34,14 @@ const EducationSection = () => {
   ];
 
   return (
-    <section id="education" className="section-padding bg-secondary/30">
+    <section id="education" className="section-padding bg-secondary/20 backdrop-blur-sm">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Education</h2>
-            <div className="w-24 h-1 bg-accent mx-auto rounded-full mb-6"></div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="text-primary">Education</span> <span className="text-accent">&</span> <span className="text-primary">Learning</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Academic foundation and continuous learning journey
             </p>
@@ -47,9 +49,9 @@ const EducationSection = () => {
           
           <div className="space-y-8">
             {education.map((edu, index) => (
-              <div key={index} className="tech-card">
+              <div key={index} className="cyber-card">
                 <div className="flex items-start gap-6">
-                  <div className="p-4 bg-accent/10 rounded-xl">
+                  <div className="p-4 bg-accent/20 rounded-xl border border-accent/30">
                     <GraduationCap className="text-accent" size={32} />
                   </div>
                   

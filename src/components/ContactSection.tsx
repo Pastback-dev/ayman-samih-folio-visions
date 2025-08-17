@@ -35,8 +35,10 @@ const ContactSection = () => {
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Get In Touch</h2>
-            <div className="w-24 h-1 bg-accent mx-auto rounded-full mb-6"></div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="text-primary">Get</span> <span className="text-accent">In Touch</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Let's connect and discuss opportunities, collaborations, or just have a friendly conversation about technology!
             </p>
@@ -89,8 +91,11 @@ const ContactSection = () => {
                 </div>
               </div>
               
-              <div className="tech-card">
-                <h4 className="font-semibold text-primary mb-4">Let's Build Something Amazing</h4>
+              <div className="cyber-card">
+                <h4 className="font-semibold text-primary mb-4 flex items-center gap-2">
+                  <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                  Let's Build Something Amazing
+                </h4>
                 <p className="text-muted-foreground mb-4">
                   Whether you have a project idea, need technical consultation, or want to collaborate 
                   on innovative solutions, I'm always excited to connect with fellow tech enthusiasts 
@@ -111,7 +116,7 @@ const ContactSection = () => {
             </div>
             
             {/* Contact Form */}
-            <div className="tech-card">
+            <div className="cyber-card">
               <h3 className="text-2xl font-semibold text-primary mb-6">Send a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">

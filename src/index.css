@@ -2,110 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Tech-inspired portfolio design system - Modern, professional, and elegant */
+/* Modern IT portfolio design system - Cyber aesthetic meets professional development */
 
 @layer base {
   :root {
-    --background: 210 25% 98%;
-    --foreground: 210 15% 15%;
+    --background: 8 12% 6%;
+    --foreground: 210 100% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 15% 15%;
+    --card: 12 15% 8%;
+    --card-foreground: 210 100% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 15% 15%;
+    --popover: 12 15% 8%;
+    --popover-foreground: 210 100% 98%;
 
-    /* Deep navy primary for professionalism */
-    --primary: 210 100% 12%;
-    --primary-foreground: 0 0% 98%;
+    /* Electric blue primary for modern tech feel */
+    --primary: 217 91% 60%;
+    --primary-foreground: 8 12% 6%;
     
-    /* Tech cyan accent for highlights */
-    --accent-primary: 185 100% 45%;
-    --accent-secondary: 195 100% 75%;
+    /* Neon green accent for cyber aesthetic */
+    --accent-cyber: 142 71% 45%;
+    --accent-electric: 200 100% 50%;
+    --accent-neon: 80 100% 50%;
     
-    /* Elegant grays for content */
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 210 15% 25%;
+    /* Dark tech grays */
+    --secondary: 15 15% 12%;
+    --secondary-foreground: 210 100% 95%;
 
-    --muted: 210 15% 95%;
-    --muted-foreground: 210 10% 45%;
+    --muted: 12 15% 10%;
+    --muted-foreground: 210 40% 70%;
 
-    --accent: 185 100% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 142 71% 45%;
+    --accent-foreground: 8 12% 6%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 96%;
-    --ring: 185 100% 45%;
+    --border: 15 20% 15%;
+    --input: 15 20% 12%;
+    --ring: 217 91% 60%;
 
-    /* Custom portfolio colors */
-    --tech-gradient: linear-gradient(135deg, hsl(210 100% 12%) 0%, hsl(220 80% 20%) 100%);
-    --accent-gradient: linear-gradient(135deg, hsl(185 100% 45%) 0%, hsl(195 100% 60%) 100%);
-    --hero-gradient: linear-gradient(135deg, hsl(210 25% 98%) 0%, hsl(210 20% 95%) 50%, hsl(210 25% 98%) 100%);
+    /* Modern IT gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(142 71% 45%) 100%);
+    --gradient-matrix: linear-gradient(90deg, hsl(142 71% 45%) 0%, hsl(80 100% 50%) 50%, hsl(142 71% 45%) 100%);
+    --gradient-tech: linear-gradient(135deg, hsl(8 12% 6%) 0%, hsl(12 15% 8%) 50%, hsl(15 15% 12%) 100%);
+    --gradient-glow: radial-gradient(circle, hsl(217 91% 60% / 0.3) 0%, transparent 70%);
     
-    /* Shadows for depth */
-    --shadow-soft: 0 2px 20px -2px hsl(210 100% 12% / 0.08);
-    --shadow-medium: 0 8px 30px -8px hsl(210 100% 12% / 0.15);
-    --shadow-large: 0 20px 60px -12px hsl(210 100% 12% / 0.25);
-    --shadow-glow: 0 0 40px hsl(185 100% 45% / 0.3);
+    /* Tech shadows and glows */
+    --shadow-neon: 0 0 20px hsl(217 91% 60% / 0.5);
+    --shadow-cyber: 0 0 30px hsl(142 71% 45% / 0.3);
+    --shadow-matrix: 0 0 40px hsl(80 100% 50% / 0.2);
+    --shadow-tech: 0 8px 32px hsl(8 12% 6% / 0.8);
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 8 12% 6%;
+    --sidebar-foreground: 210 100% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 8 12% 6%;
+    --sidebar-accent: 142 71% 45%;
+    --sidebar-accent-foreground: 8 12% 6%;
+    --sidebar-border: 15 20% 15%;
+    --sidebar-ring: 217 91% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
+    --background: 8 12% 6%;
+    --foreground: 210 100% 98%;
+    --card: 12 15% 8%;
+    --card-foreground: 210 100% 98%;
+    --popover: 12 15% 8%;
+    --popover-foreground: 210 100% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 8 12% 6%;
+    --secondary: 15 15% 12%;
+    --secondary-foreground: 210 100% 95%;
+    --muted: 12 15% 10%;
+    --muted-foreground: 210 40% 70%;
+    --accent: 142 71% 45%;
+    --accent-foreground: 8 12% 6%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 15 20% 15%;
+    --input: 15 20% 12%;
+    --ring: 217 91% 60%;
   }
 }
 
@@ -121,43 +100,133 @@
 }
 
 @layer components {
-  /* Hero section styles */
-  .hero-pattern {
-    background: var(--hero-gradient);
+  /* Modern IT hero section */
+  .hero-tech {
+    background: var(--gradient-tech);
     position: relative;
+    overflow: hidden;
   }
   
-  .hero-pattern::before {
+  .hero-tech::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-      radial-gradient(circle at 25% 25%, hsl(185 100% 45% / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, hsl(210 100% 12% / 0.05) 0%, transparent 50%);
+    background: 
+      radial-gradient(circle at 20% 80%, hsl(217 91% 60% / 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(142 71% 45% / 0.2) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsl(80 100% 50% / 0.1) 0%, transparent 50%);
     pointer-events: none;
   }
 
-  /* Tech card styles */
-  .tech-card {
-    @apply bg-card rounded-xl p-6 transition-all duration-300 hover:scale-105;
-    box-shadow: var(--shadow-soft);
+  /* Cyber card styles */
+  .cyber-card {
+    @apply rounded-xl p-6 transition-all duration-300;
+    background: var(--gradient-tech);
+    border: 1px solid hsl(var(--border));
+    backdrop-filter: blur(10px);
   }
   
-  .tech-card:hover {
-    box-shadow: var(--shadow-medium);
+  .cyber-card:hover {
+    border-color: hsl(var(--primary));
+    box-shadow: var(--shadow-neon);
+    transform: translateY(-2px);
   }
 
-  /* Skill progress bars */
-  .skill-bar {
-    @apply h-2 rounded-full bg-secondary overflow-hidden;
+  /* Matrix-style skill bars */
+  .skill-bar-modern {
+    @apply h-3 rounded-full bg-secondary/50 overflow-hidden backdrop-blur-sm;
+    border: 1px solid hsl(var(--border));
   }
   
-  .skill-progress {
+  .skill-progress-cyber {
     @apply h-full rounded-full transition-all duration-1000 ease-out;
-    background: var(--accent-gradient);
+    background: var(--gradient-matrix);
+    box-shadow: var(--shadow-cyber);
+  }
+
+  /* Glitch text effect */
+  .glitch-text {
+    position: relative;
+    color: hsl(var(--foreground));
+  }
+  
+  .glitch-text::before,
+  .glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .glitch-text::before {
+    color: hsl(var(--primary));
+    animation: glitch-1 0.3s infinite linear alternate-reverse;
+  }
+  
+  .glitch-text::after {
+    color: hsl(var(--accent));
+    animation: glitch-2 0.3s infinite linear alternate-reverse;
+  }
+
+  /* Modern tech buttons */
+  .btn-cyber {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300 relative overflow-hidden;
+    background: var(--gradient-cyber);
+    border: 1px solid hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+  
+  .btn-cyber::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .btn-cyber:hover::before {
+    left: 100%;
+  }
+  
+  .btn-cyber:hover {
+    box-shadow: var(--shadow-neon);
+    transform: scale(1.05);
+  }
+
+  .btn-matrix {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    background: var(--gradient-matrix);
+    color: hsl(var(--accent-foreground));
+    border: 1px solid hsl(var(--accent));
+  }
+  
+  .btn-matrix:hover {
+    box-shadow: var(--shadow-cyber);
+    transform: scale(1.05);
+  }
+
+  /* Code block styling */
+  .code-block {
+    @apply font-mono text-sm p-4 rounded-lg;
+    background: hsl(var(--muted));
+    border: 1px solid hsl(var(--border));
+    color: hsl(var(--accent));
+  }
+
+  /* Typing animation */
+  .typing-animation {
+    overflow: hidden;
+    border-right: 2px solid hsl(var(--primary));
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
   }
 
   /* Animated elements */
@@ -169,30 +238,35 @@
     @apply opacity-100 translate-y-0;
   }
 
-  /* Custom buttons */
-  .btn-primary {
-    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium transition-all duration-300;
-    box-shadow: var(--shadow-soft);
-  }
-  
-  .btn-primary:hover {
-    @apply scale-105;
-    box-shadow: var(--shadow-medium);
-  }
-  
-  .btn-accent {
-    @apply text-accent-foreground px-6 py-3 rounded-lg font-medium transition-all duration-300;
-    background: var(--accent-gradient);
-    box-shadow: var(--shadow-soft);
-  }
-  
-  .btn-accent:hover {
-    @apply scale-105;
-    box-shadow: var(--shadow-glow);
-  }
-
   /* Section spacing */
   .section-padding {
     @apply py-20 px-6;
   }
+}
+
+/* Animations for IT theme */
+@keyframes glitch-1 {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+}
+
+@keyframes glitch-2 {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(2px, -2px); }
+  40% { transform: translate(2px, 2px); }
+  60% { transform: translate(-2px, -2px); }
+  80% { transform: translate(-2px, 2px); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: hsl(var(--primary)); }
 }

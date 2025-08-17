@@ -55,21 +55,24 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding bg-secondary/30">
+    <section id="skills" className="section-padding bg-secondary/20 backdrop-blur-sm">
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Technical Skills</h2>
-            <div className="w-24 h-1 bg-accent mx-auto rounded-full mb-6"></div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="text-primary">Technical</span> <span className="text-accent">Skills</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive overview of my technical expertise and proficiency levels
+              A comprehensive overview of my technical expertise and programming proficiency
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {skillCategories.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="tech-card">
-                <h3 className="text-lg font-semibold text-primary mb-6 text-center">
+              <div key={categoryIndex} className="cyber-card">
+                <h3 className="text-lg font-semibold text-primary mb-6 text-center flex items-center justify-center gap-2">
+                  <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
                   {category.title}
                 </h3>
                 <div className="space-y-4">
@@ -83,9 +86,9 @@ const SkillsSection = () => {
                           {skill.level}%
                         </span>
                       </div>
-                      <div className="skill-bar">
+                      <div className="skill-bar-modern">
                         <div 
-                          className="skill-progress"
+                          className="skill-progress-cyber"
                           style={{
                             width: isVisible ? `${skill.level}%` : '0%',
                             transition: `width 1.5s ease-out ${skillIndex * 0.1}s`

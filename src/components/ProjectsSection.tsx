@@ -37,36 +37,38 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="section-padding bg-background">
+    <section id="projects" className="section-padding bg-background/95 backdrop-blur-sm">
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Featured Projects</h2>
-            <div className="w-24 h-1 bg-accent mx-auto rounded-full mb-6"></div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="text-primary">Featured</span> <span className="text-accent">Projects</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A showcase of my technical projects and development experience
+              A showcase of my technical projects and development expertise
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <div key={index} className="tech-card group">
+              <div key={index} className="cyber-card group">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="p-3 bg-accent/10 rounded-lg">
+                  <div className="p-3 bg-accent/20 rounded-lg border border-accent/30">
                     {project.icon}
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between">
-                      <h3 className="text-xl font-semibold text-primary group-hover:text-accent transition-colors">
-                        {project.title}
-                      </h3>
-                      <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        project.status === 'Completed' 
-                          ? 'bg-green-100 text-green-700' 
-                          : 'bg-blue-100 text-blue-700'
-                      }`}>
-                        {project.status}
-                      </span>
+                    <h3 className="text-xl font-semibold text-primary group-hover:text-accent transition-colors">
+                      {project.title}
+                    </h3>
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium border ${
+                      project.status === 'Completed' 
+                        ? 'bg-accent/20 text-accent border-accent/30' 
+                        : 'bg-primary/20 text-primary border-primary/30'
+                    }`}>
+                      {project.status}
+                    </span>
                     </div>
                     <p className="text-sm text-muted-foreground">{project.year}</p>
                   </div>
@@ -80,7 +82,7 @@ const ProjectsSection = () => {
                   {project.tech.map((tech, techIndex) => (
                     <span 
                       key={techIndex} 
-                      className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm"
+                      className="px-3 py-1 bg-secondary/50 text-secondary-foreground rounded-full text-sm border border-border"
                     >
                       {tech}
                     </span>
@@ -88,11 +90,11 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                  <button className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:scale-105 transition-transform">
+                  <button className="btn-cyber flex items-center gap-2 text-sm">
                     <Github size={16} />
                     View Code
                   </button>
-                  <button className="flex items-center gap-2 px-4 py-2 border border-accent text-accent rounded-lg text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors">
+                  <button className="btn-matrix flex items-center gap-2 text-sm">
                     <ExternalLink size={16} />
                     Live Demo
                   </button>
